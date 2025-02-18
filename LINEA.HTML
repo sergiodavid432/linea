@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea de Tiempo de la Criptografía</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 90%; /* Ajuste del ancho máximo */
+    margin: auto;
+    padding: 20px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #333;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.container {
+    position: relative;
+    background: white;
+    width: 45%; /* Usar porcentaje para el ancho */
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container.left {
+    left: 0;
+    text-align: right;
+}
+
+.container.right {
+    left: 55%;
+}
+
+.container img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+    .timeline::after {
+        left: 10px; 
+    }
+    .container {
+        width: 90%; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container.left {
+        left: 0;
+        text-align: left; 
+    }
+    .container.right {
+        left: 0; 
+    }
+}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Línea de Tiempo de la Criptografía</h1>
+    <div class="timeline">
+
+
+
+       
+        
+        <div class="container left">
+            <h2>1500 A.C - Tablillas Babilónicas</h2>
+            <img src="/img/tablillasbabilonicas.jpg" alt="Tablillas Babilónicas">
+            <p>Los babilonios utilizaban tablillas de arcilla con mensajes ocultos para proteger secretos comerciales.</p>
+        </div>
+
+        <div class="container right">
+            <h2>500 A.C - Escítala Espartana</h2>
+            <img src="/img/ecitala.jpg" alt="Escítala Espartana">
+            <p>Los espartanos usaban la escítala, un cilindro de madera con una tira de cuero enrollada para cifrar mensajes .</p>
+        </div>
+
+
+        <div class="container left">
+            <h2>850 D.C - Análisis de Frecuencia de Al-Kindi</h2>
+            <img src="/img/alkindi.jpg" alt="Al-Kindi">
+            <p>El matemático árabe Al-Kindi desarrolló el análisis de frecuencia para descifrar cifrados de sustitución.</p>
+        </div>
+    
+        <div class="container right">
+            <h2>3000 a.C. - Sellos de Arcilla en Mesopotamia</h2>
+            <img src="/img/th.jpg" alt="Sellos de Arcilla">
+            <p>Los primeros registros de sellos de arcilla se usaron para autenticar documentos y proteger su integridad. Estos sellos fueron fundamentales en la contabilidad y administración, marcando propiedad y autorización de bienes.</p>
+        </div>
+        <div class="container left">
+            <h2>600 a.C. - Cifrado Atbash en el Antiguo Israel</h2>
+            <img src="/img/OIP (6).jpg" alt="Cifrado Atbash">
+            <p>Un cifrado de sustitución simple usado en textos religiosos hebreos, donde las letras del alfabeto se sustituyen por sus opuestas.</p>
+        </div>
+        <div class="container right">
+            <h2>200 a.C. - Cifrado de Polibio</h2>
+            <img src="/img/oip 7.jpg" alt="Cifrado de Polibio">
+            <p>Sistema de cifrado basado en una cuadrícula 5x5 que convierte letras en coordenadas numéricas.</p>
+        </div>
+        <div class="container left">
+            <h2>50 a.C. - Cifrado César</h2>
+            <img src="/img/OIP (7).jpg" alt="Cifrado César">
+            <p>Julio César utilizaba un cifrado por desplazamiento para ocultar mensajes militares.</p>
+        </div>
+        
+        <div class="container left">
+            <h2>1200 d.C. - Cifrado de Roger Bacon</h2>
+            <img src="/img/cifrado-del-tocino-o-el-cifrado-de-bacon-fue-creado-como-un-metodo-de-ocultar-un-mensaje-dentro-de-otro-no-es-un-verdadero-cifrado-pero-solo-una-manera-de-ocultar-texto-secreto-dentro-de-la-vista-la-forma-en-que-or.jpg" alt="Roger Bacon">
+            <p>Roger Bacon escribió sobre métodos para ocultar mensajes mediante códigos y cifrados.</p>
+        </div>
+        <div class="container right">
+            <h2>1400 d.C. - Cifrado de Leon Battista Alberti</h2>
+            <img src="/img/OIP (9).jpg" alt="Leon Battista Alberti">
+            <p>Alberti inventó el disco cifrante, un dispositivo mecánico que introdujo el concepto del cifrado polialfabético.</p>
+        </div>
+
+        <div class="container left">
+            <h2>1467 - Cifrado Polialfabético de Alberti</h2>
+            <img src="/img/OIP (10).jpg" alt="Leon Battista Alberti">
+            <p>Leon Battista Alberti desarrolló el primer sistema de cifrado polialfabético.</p>
+        </div>
+
+
+
+        <div class="container right">
+            <h2>1553 - Cifrado de Vigenère</h2>
+            <img src="/img/OIP (11).jpg" alt="Cifrado de Vigenère">
+            <p>Uso de una clave para cambiar cada letra, dificultando el análisis de frecuencia.</p>
+        </div>
+
+        
+      	<div class="container right"> 
+          	<h2>1700 d.C. - Cifrado de Thomas Jefferson</h2><img src= "/img/o" alt= "Thomas Jefferson"> 
+          	<p>Jefferson inventó la "rueda cifrante", un dispositivo mecánico que permitía cifrar mensajes mediante transposición.</p></div>
+          
+         <div class="container left">
+            <h2>1795 - Máquina de Jefferson</h2>
+            <img src="/img/OIP (12).jpg" alt="Máquina de Jefferson">
+            <p>Un dispositivo mecánico con discos giratorios para crear cifrados avanzados.</p>
+        </div>
+      	<div class="container right"> 
+          	<h2>1854 - Cifrado de Charles Babbage</h2><img src= "/img/OIP (13).jpg" alt= "Charles Babbage"> 
+          	<p>Babbage desarrolló métodos para romper el cifrado Vigenère mediante análisis matemático.</p></div>
+
+        <div class="container left">
+            <h2>1918 - Máquina ADFGVX Alemana</h2>
+            <img src="/img/9.jpg" alt="Máquina ADFGVX Alemana">
+            <p>Un cifrado basado en transposición y sustitución utilizado en la Primera Guerra Mundial.</p>   
+        </div>
+
+      	<div class="container right"> 
+          	<h2>1920 - Cifrado de Hebern</h2><img src= "/img/th.jpg" alt= "Edward Hebern"> 
+          	<p>Edward Hebern inventó una máquina electromecánica precursora de la máquina Enigma.</p></div>
+
+      	<div class="container left"> 
+          	<h2>1930 - Máquina Hagelin</h2><img src= "/img/OIP (14).jpg" alt= "Máquina Hagelin"> 
+          	<p>Boris Hagelin desarrolló máquinas portátiles utilizadas ampliamente durante la Segunda Guerra Mundial.</p></div>
+
+        </div>
+        
+        
+        <div class="container left">
+            <h2>1940 - Alan Turing y la Máquina Bombe</h2>
+            <img src="/img/descargar.jpg" alt="Alan Turing y la Máquina Bombe">
+            <p>Turing desarrolló una máquina para descifrar el cifrado Enigma alemán.</p>
+        </div>
+
+      	<div class="container right"> 
+          	<h2>1949 - Teoría de la Información por Claude Shannon</h2><img src= "/img/OIP (15).jpg" alt= "Claude Shannon"> 
+          	<p>Shannon publicó "Communication Theory of Secrecy Systems", estableciendo las bases matemáticas para la criptografía moderna.</p></div>
+
+      	<div class="container left"> 
+          	<h2>1960 - Cifrado Lucifer</h2><img src= "/img/OIP (16).jpg" alt= "Cifrado Lucifer"> 
+          	<p>IBM desarrolló Lucifer, precursor del estándar DES (Data Encryption Standard) Lucifer utiliza una combinación de cifrado por transposición y sustitución como punto de partida para decodificar cifrados. Una variante, descrita por Feistel en 1971, utiliza una clave de 48 bits y opera en bloques de 48 bits. El cifrado es una red de sustitución-permutación y utiliza dos cajas S de 4 bits</p></div>
+
+      	<div class="container right"> 
+          	<h2>1973 - Cifrado Merkle-Hellman</h2><img src= "/img/OIP (17).jpg" alt= "Merkle-Hellman"> 
+          	<p>Ralph Merkle y Martin Hellman desarrollaron un esquema basado en mochila, uno de los primeros ejemplos de criptografía asimétrica.</p></div>
+
+      	<div class="container left"> 
+          	<h2>1985 - Criptografía con Curvas Elípticas (ECC)</h2><img src= "/img/th (2).jpg" alt= "Curvas Elípticas"> 
+          	<p>Neal Koblitz y Victor S. Miller propusieron independientemente el uso de curvas elípticas en criptografíaLa criptografía con curvas elípticas (ECC) es una técnica avanzada de criptografía de clave pública que utiliza las propiedades matemáticas de las curvas elípticas para asegurar la comunicación.</p></div>
+
+      	<div class="container right"> 
+          	<h2>1990 - Algoritmo IDEA</h2><img src= "/img/th (4).jpg" alt= "IDEA"> 
+          	<p>IDEA (International Data Encryption Algorithm) fue desarrollado como una alternativa más segura al DES.El algoritmo IDEA (International Data Encryption Algorithm) es bastante mas joven que DES, pues data de 1992. Para muchos constituye el mejor y mas seguro algoritmo simetrico disponible en la actualidad. </p></div>
+
+      	<div class="container left"> 
+          	<h2>1995 - Algoritmo Twofish</h2><img src= "/img/th (3).jpg" alt= "Twofish"> 
+          	<p>Bruce Schneier diseñó Twofish, un algoritmo simétrico finalista en la competencia AES (Asociación de Empresas Seguras    )  es un método de criptografía simétrica con cifrado por bloques desarrollado por Counterpane Labs y presentado al concurso del NIST que buscaba un sustituto para DES Cifrar algo implica convertir material legible (oraciones, números, etc.) en un texto incomprensible llamado texto cifrado. El descifrado del mensaje se realiza mediante claves criptográficas</p></div>
+
+      	<div class="container right"> 
+          	<h2>2000 - Algoritmo Serpent</h2><img src= "/img/OIP (18).jpg" alt= "Serpent"> 
+          	<p>Serpent fue otro finalista del AES diseñado para ser extremadamente seguro pero menos eficiente que Rijndael (AES)stá diseñado para ser altamente seguro contra ataques criptográficos conocidos, como ataques de fuerza bruta y criptoanálisis diferencial..</p></div>
+
+      	<div class="container left"> 
+          	<h2>2010 - Algoritmo Salsa20</h2><img src= "salsa20.jpg" alt= "Salsa20"> 
+          	<p>Salsa20 fue desarrollado como una alternativa popular a RC4 (Rivest Cipher 4) para cifrado rápido y seguro permite el cifrado de comincaciones almcenamiento seguro y portocolos de seguridad .</p></div>
+
+      	<div class="container right"> 
+          	<h2>2016 - zk-SNARKs (Cifrado Zcash)</h2><img src= "/img/th (5).jpg" alt= "Zcash"> 
+          	<p>Zcash implementó zk-SNARKs para permitir transacciones completamente anónimas en blockchain es decir, permite que un individuo demuestre a otro que una declaración es verdadera, sin revelar ninguna información más allá de la validez de la declaración.</p></div>
+
+      	<div class="container left"> 
+          	<h2>2018 - Criptografía Post-Cuántica (Lattice-Based)</h2><img src= "/img/th (6).jpg" alt= "Lattice-Based Cryptography"> 
+          	<p>Sse refiere a sistemas criptográficos diseñados para ser seguros contra la amenaza potencial de computadoras cuánticas. Estos sistemas buscan reemplazar o complementar los sistemas criptográficos tradicionales, como RSA, que se consideran vulnerables a ataques cuánticos.</p></div>
+
+      	<div class="container right"> 
+          	<h2>2021 - Algoritmo Falcon</h2><img src= "/img/descargar (1).jpg" alt= "Falcon"> 
+          	<p>Falcon un protocolo respetuoso con la privacidad para el entrenamiento de algoritmos de inteligencia artificial.</p></div>
+
+      	
+  	  </div>
+
+  	  <script>
+          document.addEventListener("DOMContentLoaded", function() {
+              const containers = document.querySelectorAll(".container");
+              const observer = new IntersectionObserver(entries => {
+                  entries.forEach(entry => {
+                      if (entry.isIntersecting) {
+                          entry.target.classList.add("show");
+                      }
+                  });
+              }, { threshold: 0.3 });
+              containers.forEach(container => observer.observe(container));
+          });
+      </script>
+
+</body>
+</html>
